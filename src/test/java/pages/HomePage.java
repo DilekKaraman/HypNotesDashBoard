@@ -4,8 +4,9 @@ package pages;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import utilities.ReusableMethods;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
