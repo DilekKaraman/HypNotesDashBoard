@@ -73,7 +73,7 @@ public class HomePage extends CommonPage {
     @FindBy (css = "[data-test-id='loginScreen_pricing']")
     public WebElement pricingIcon;
 
-    @FindBy (xpath = "//h2[@class='display-6 text-center mb-4']")
+    @FindBy (xpath = "//span[.='Fiyatlandırma']")
     public WebElement planCompaisonInTurkish;
 
 
