@@ -1,5 +1,7 @@
 package utilities;
 
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -19,8 +21,10 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Function;
 
+import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static stepDefinitions.Hooks.response;
 
 
 public class ReusableMethods {
@@ -305,6 +309,16 @@ public class ReusableMethods {
 
     public static void assertBackgroundColor(String color, WebElement webElement) {
         Assert.assertEquals(color, webElement.getCssValue("background-color"));
+    }
+    public static void responseLanguage(String url){
+        response= given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get(url);
+
+        int statusCode = response.getStatusCode();
+        System.out.println("Status Code: " + statusCode);
+        Assert.assertEquals(statusCode, 200);
     }
 
     }

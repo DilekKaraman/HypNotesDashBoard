@@ -13,7 +13,7 @@ import java.util.List;
 
 import static stepDefinitions.Hooks.driver;
 
-public class LanguagesControl_StepDefs extends CommonPage {
+public class US_003_LanguagesControl_StepDefs extends CommonPage {
     @Given("user goes to homepage")
     public void user_goes_to_homepage() {
         driver.get(ConfigurationReader.getProperty("url"));
