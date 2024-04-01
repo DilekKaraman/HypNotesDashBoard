@@ -95,8 +95,8 @@ public class LanguagesControl_StepDefs extends CommonPage {
             ReusableMethods.waitFor(2);
             String expectedUrl = elements.get(i);
             String currentUrl = driver.getCurrentUrl();
-            System.out.println(expectedUrl);
-            System.out.println(currentUrl);
+//            System.out.println(expectedUrl);
+//            System.out.println(currentUrl);
             Assert.assertEquals(expectedUrl, currentUrl);
         }
     }
