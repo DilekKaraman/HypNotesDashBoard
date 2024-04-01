@@ -5,9 +5,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 import pages.CommonPage;
-import pages.HomePage;
 import utilities.ConfigurationReader;
 import utilities.ReusableMethods;
 
@@ -95,8 +93,8 @@ public class LanguagesControl_StepDefs extends CommonPage {
             ReusableMethods.waitFor(2);
             String expectedUrl = elements.get(i);
             String currentUrl = driver.getCurrentUrl();
-            System.out.println(expectedUrl);
-            System.out.println(currentUrl);
+//            System.out.println(expectedUrl);
+//            System.out.println(currentUrl);
             Assert.assertEquals(expectedUrl, currentUrl);
         }
     }
