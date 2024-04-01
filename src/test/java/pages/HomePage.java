@@ -26,15 +26,6 @@ public class HomePage extends CommonPage {
     @FindBy(css = "div>.ant-avatar.ant-avatar-sm.ant-avatar-circle.ant-avatar-image.css-15rg2km>img")
     public List<WebElement> languagesList;
 
-    public void verifyFooterLinks(String expectedCurrentUrl) {
-        try {
-            Assert.assertEquals(expectedCurrentUrl, driver.getCurrentUrl());
-        } catch (AssertionError e) {
-            System.out.println("Irrelevant page opened for " + expectedCurrentUrl + "!!");
-
-        }
-
-    }
 
     @FindBy(css = ".ant-select-selector")
     public WebElement languagesDropdown;
