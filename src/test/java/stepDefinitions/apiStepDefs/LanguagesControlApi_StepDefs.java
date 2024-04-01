@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import org.junit.Assert;
 
 import static io.restassured.RestAssured.*;
 import static stepDefinitions.Hooks.response;
@@ -19,6 +20,7 @@ public class LanguagesControlApi_StepDefs {
 
         int statusCode = response.getStatusCode();
         System.out.println("Status Code: " + statusCode);
+        Assert.assertEquals(statusCode, 200);
 
     }
 
@@ -31,6 +33,7 @@ public class LanguagesControlApi_StepDefs {
 
         int statusCode = response.getStatusCode();
         System.out.println("Status Code: " + statusCode);
+        Assert.assertEquals(statusCode, 200);
     }
 
     @Then("user verifies German language {string}")
@@ -42,6 +45,7 @@ public class LanguagesControlApi_StepDefs {
 
         int statusCode = response.getStatusCode();
         System.out.println("Status Code: " + statusCode);
+        Assert.assertEquals(statusCode, 200);
     }
 
     @Then("user verifies French language {string}")
@@ -53,6 +57,7 @@ public class LanguagesControlApi_StepDefs {
 
         int statusCode = response.getStatusCode();
         System.out.println("Status Code: " + statusCode);
+        Assert.assertEquals(statusCode, 200);
     }
 
     @Then("user verifies Russian language {string}")
@@ -64,6 +69,7 @@ public class LanguagesControlApi_StepDefs {
 
         int statusCode = response.getStatusCode();
         System.out.println("Status Code: " + statusCode);
+        Assert.assertEquals(statusCode, 200);
     }
 
     @Then("user verifies Spanish language {string}")
@@ -75,5 +81,6 @@ public class LanguagesControlApi_StepDefs {
 
         int statusCode = response.getStatusCode();
         System.out.println("Status Code: " + statusCode);
+        Assert.assertEquals(statusCode, 200);
     }
 }
