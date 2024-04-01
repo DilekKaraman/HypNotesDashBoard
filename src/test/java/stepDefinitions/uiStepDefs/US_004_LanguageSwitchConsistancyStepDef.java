@@ -102,10 +102,10 @@ public class US_004_LanguageSwitchConsistancyStepDef extends CommonPage {
 
     @Then("the Pricing details for Compare plans on the page should change into Turkish Language")
     public void thePricingDetailsForComparePlansOnThePageShouldChangeIntoTurkishLanguage() {
-        ReusableMethods.waitForVisibility(homePage.planCompaisonInTurkish,3);
+        ReusableMethods.waitForVisibility(homePage.planComparisonInTurkish,3);
 
    // Assert.assertEquals("Planları karşılaştırın",homePage.planCompaisonInTurkish);
-    Assert.assertTrue(homePage.planCompaisonInTurkish.isDisplayed());
+    Assert.assertTrue(homePage.planComparisonInTurkish.isDisplayed());
     }
 
 

@@ -1,17 +1,12 @@
 package pages;
 
 
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.List;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static stepDefinitions.Hooks.driver;
+import java.util.Map;
 
 
 public class HomePage extends CommonPage {
@@ -74,7 +69,7 @@ public class HomePage extends CommonPage {
     public WebElement pricingIcon;
 
     @FindBy (xpath = "//span[.='Fiyatlandırma']")
-    public WebElement planCompaisonInTurkish;
+    public WebElement planComparisonInTurkish;
 
 
 
